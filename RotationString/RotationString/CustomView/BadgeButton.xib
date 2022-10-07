@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BadgeButton" customModule="location">
+            <connections>
+                <outlet property="badgeLabel" destination="4g5-BJ-yFh" id="UOl-6I-LWo"/>
+                <outlet property="checkButton" destination="8xb-J0-6JS" id="K8u-lp-404"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="fHx-BT-vPF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="xZt-Ft-Faq">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xb-J0-6JS">
+                            <rect key="frame" x="24" y="19" width="342" height="93"/>
+                            <color key="backgroundColor" red="0.45046270940975985" green="0.7803921568627451" blue="0.62123570570073328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Checking Rotation" cornerStyle="capsule">
+                                <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="28"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="CheckButtonAction:" destination="-1" eventType="touchUpInside" id="ySX-Jv-yCk"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g5-BJ-yFh">
+                            <rect key="frame" x="32" y="4" width="30" height="30"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="GaV-8w-9RP"/>
+                                <constraint firstAttribute="height" constant="30" id="kss-7n-xJn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8xb-J0-6JS" firstAttribute="leading" secondItem="xZt-Ft-Faq" secondAttribute="leadingMargin" constant="16" id="7uZ-Rg-b42"/>
+                        <constraint firstItem="4g5-BJ-yFh" firstAttribute="top" secondItem="8xb-J0-6JS" secondAttribute="top" constant="-15" id="PEJ-3g-bUJ"/>
+                        <constraint firstItem="8xb-J0-6JS" firstAttribute="top" secondItem="xZt-Ft-Faq" secondAttribute="top" constant="19" id="Paw-Fj-HOy"/>
+                        <constraint firstItem="4g5-BJ-yFh" firstAttribute="leading" secondItem="xZt-Ft-Faq" secondAttribute="leading" constant="32" id="QqN-zO-FAf"/>
+                        <constraint firstItem="8xb-J0-6JS" firstAttribute="trailing" secondItem="xZt-Ft-Faq" secondAttribute="trailingMargin" constant="-16" id="dkf-wf-5We"/>
+                        <constraint firstItem="8xb-J0-6JS" firstAttribute="bottom" secondItem="xZt-Ft-Faq" secondAttribute="bottomMargin" id="wed-Lw-bPk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xZt-Ft-Faq" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1Nv-GK-S0b"/>
+                <constraint firstItem="xZt-Ft-Faq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CYm-Cy-cot"/>
+                <constraint firstItem="xZt-Ft-Faq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="D4a-ME-67c"/>
+                <constraint firstItem="xZt-Ft-Faq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="raD-ps-RJQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="116.92307692307692" y="301.42180094786727"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
